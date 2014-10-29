@@ -23,12 +23,9 @@ def main():
     # after you have created them on the local file system.  It assumes that you
     # have used the output field name for the filename for each output, but you
     # can change that behavior to suit your needs.
-    rsrc_dir = ""
-    if "DX_FS_ROOT" in os.environ:
-        rsrc_dir = os.environ['DX_FS_ROOT']
-    file = rsrc_dir + "/opt/RealLungCancerExampleWithAD.vcf";
-    
-    VCF = dxpy.upload_local_file(file);
+    rsrc_dir = os.environ['DX_FS_ROOT']
+    print os.path.join(rsrc_dir, "/opt/SRP004061.variant.annotated.vcf");
+    VCF = dxpy.upload_local_file(os.path.join(rsrc_dir, "/opt/SRP004061.variants.annotated.vcf"));
 
     # The following line fills in some basic dummy output and assumes
     # that you have created variables to represent your output with
