@@ -1,0 +1,26 @@
+{
+  "name": "No-Op_Dummy_App",
+  "title": "Dummy Return VCF",
+  "summary": "Returns short VCF",
+  "dxapi": "1.0.0",
+  "version": "0.0.1",
+  "categories": [
+    "Debugging",
+    "Debugging",
+    "Debugging",
+    "Debugging"
+  ],
+  "inputSpec": [],
+  "outputSpec": [
+    {
+      "name": "VCF",
+      "label": "Demo VCF",
+      "class": "file"
+    }
+  ],
+  "runSpec": {
+    "interpreter": "python2.7",
+    "file": "src/No-Op_Dummy_App.py"
+  },
+  "authorizedUsers": []
+}
